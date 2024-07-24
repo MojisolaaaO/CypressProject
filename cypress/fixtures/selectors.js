@@ -10,6 +10,7 @@ export const selectors = {
     "otherID": ":nth-child(3) > :nth-child(1) > :nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input",
     "licence": ":nth-child(2) > :nth-child(1) > .oxd-input-group > :nth-child(2) > .oxd-input",
     "licenceExpiryDate": ":nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-date-wrapper > .oxd-date-input > .oxd-icon",
+    "calendar": ".oxd-date-input-calendar",
     "nationality": ":nth-child(5) > :nth-child(1) > :nth-child(1) > .oxd-input-group > :nth-child(2) > .oxd-select-wrapper > .oxd-select-text > .oxd-select-text-input",
     "gender": "input[type='radio']",
     "attachmentBtn": ".orangehrm-action-header > .oxd-button",

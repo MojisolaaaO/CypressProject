@@ -1,5 +1,4 @@
 import { selectors } from "../fixtures/selectors"
-import 'cypress-iframe';
 
 describe('login', () => {
     before(() => {
@@ -26,7 +25,7 @@ describe('login', () => {
         cy.get(selectors.otherID).clear().type("222")
         cy.get(selectors.licence).clear().type("12345")
         cy.get(selectors.licenceExpiryDate).click()
-        cy.get('.oxd-date-input-calendar').contains('23').click();
+        cy.get(selectors.calendar).contains('23').click();
         cy.get('.--close').click();
         cy.get(selectors.nationality).click()
         cy.contains("Nigerian").scrollIntoView().click();
