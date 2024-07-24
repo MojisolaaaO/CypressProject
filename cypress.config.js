@@ -14,6 +14,7 @@ module.exports = defineConfig({
         "watchForFileChanges": false,
         "testIsolation": false,
         "video": true,
+        "experimentalStudio": false,
         setupNodeEvents(on, config) {
             // implement node event listeners here
         },

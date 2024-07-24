@@ -23,3 +23,7 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+//require('cypress-xpath');
+
+import 'cypress-iframe';
+import 'cypress-file-upload';
