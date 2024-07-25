@@ -14,7 +14,9 @@ module.exports = defineConfig({
         "watchForFileChanges": false,
         "testIsolation": false,
         "video": true,
-        "experimentalStudio": false,
+        "experimentalStudio": true,
+        viewportHeight: 660,
+        viewportWidth: 1000,
         setupNodeEvents(on, config) {
             // implement node event listeners here
         },
