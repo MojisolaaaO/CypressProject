@@ -38,18 +38,15 @@ describe('Profile Details', () => {
         cy.get(selectors.licence).clear().type("74730337")
         cy.get(selectors.licenceExpiryDate).click()
         cy.get(selectors.calendar).contains('23').click();
-        cy.get('.--close').click();
+        cy.get(selectors.calenderCloseBtn).click();
         cy.get(selectors.nationality).click()
         cy.contains("Nigerian").scrollIntoView().click();
         cy.get(selectors.gender).click();
         cy.get(selectors.personalDetailsSaveBtn).click()
-
-        // //update profile pic 
-        // cy.get('.employee-image').click()
-        // cy.get('.employee-image-wrapper > .employee-image').attachFile("Me.jpg").wait(5000)
-        // cy.get('.oxd-button')
-
-
+        cy.get(selectors.bloodType).click()
+        cy.contains("A+").click()
+        cy.get(selectors.testField).clear().type("2222")
+        cy.get(selectors.customFieldSaveBtn).click()
 
     })
 

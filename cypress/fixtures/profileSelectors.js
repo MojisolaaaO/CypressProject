@@ -11,6 +11,7 @@ export const selectors = {
     "licence": ":nth-child(2) > :nth-child(1) > .oxd-input-group > :nth-child(2) > .oxd-input",
     "licenceExpiryDate": ":nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-date-wrapper > .oxd-date-input > .oxd-icon",
     "calendar": ".oxd-date-input-calendar",
+    "calenderCloseBtn": ".--close",
     "nationality": ":nth-child(5) > :nth-child(1) > :nth-child(1) > .oxd-input-group > :nth-child(2) > .oxd-select-wrapper > .oxd-select-text > .oxd-select-text-input",
     "gender": ":nth-child(2) > :nth-child(2) > .oxd-radio-wrapper > label > .oxd-radio-input",
     "personalDetailsSaveBtn": ".orangehrm-horizontal-padding > .oxd-form > .oxd-form-actions > .oxd-button",
@@ -27,5 +28,8 @@ export const selectors = {
     "homeNumber": ":nth-child(6) > .oxd-grid-3 > :nth-child(1) > .oxd-input-group > :nth-child(2) > .oxd-input",
     "mobileNumber": ":nth-child(6) > .oxd-grid-3 > :nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input",
     "workEmail": ":nth-child(9) > .oxd-grid-3 > :nth-child(1) > .oxd-input-group > :nth-child(2) > .oxd-input",
-    "contactSaveBtn": ".oxd-form-actions > .oxd-button"
+    "contactSaveBtn": ".oxd-form-actions > .oxd-button",
+    "bloodType": ".orangehrm-card-container > .oxd-form > .oxd-form-row > .oxd-grid-3 > :nth-child(1) > .oxd-input-group > :nth-child(2) > .oxd-select-wrapper > .oxd-select-text",
+    "testField": ".orangehrm-card-container > .oxd-form > .oxd-form-row > .oxd-grid-3 > :nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input",
+    "customFieldSaveBtn": ".orangehrm-card-container > .oxd-form > .oxd-form-actions > .oxd-button"
 }
