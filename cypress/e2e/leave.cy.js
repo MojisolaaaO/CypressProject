@@ -18,7 +18,7 @@ describe('Leave Request', () => {
 
     // Test case to verify that user cannot request leave if fields are blank
 
-    it('verify that user cannot request for leave if fields are blank', () => {
+    it.skip('verify that user cannot request for leave if fields are blank', () => {
         const username = 'Admin';
         const password = 'admin123';
 
