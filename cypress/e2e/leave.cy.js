@@ -1,7 +1,7 @@
 import { selectors } from "../fixtures/leaveSelectors"
 
 
-describe('leave request', () => {
+describe('Leave Request', () => {
 
     // Runs before each test in the suite
 

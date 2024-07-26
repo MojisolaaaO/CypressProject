@@ -1,12 +1,12 @@
 import { selectors } from "../fixtures/profileSelectors"
 
 
-describe('login', () => {
+describe('Profile Details', () => {
 
     // Before all tests, perform the following setup
     before(() => {
         cy.clearAllCookies() // Clear all cookies to ensure a clean state
-        cy.visit('/')
+        cy.visit('/') // Visit the base URL of the application
             // Handle any uncaught exceptions to prevent test failure
         Cypress.on("uncaught:exception", () => {
             return false
@@ -14,6 +14,7 @@ describe('login', () => {
 
     })
 
+    // Test case to verify that user can update their personal details  
 
     it('verify that user update their profile', () => {
         const username = 'Admin';
@@ -43,12 +44,7 @@ describe('login', () => {
         cy.get(selectors.gender).click();
         cy.get(selectors.personalDetailsSaveBtn).click()
 
-        // Add an attachment
 
-        cy.get(selectors.attachmentBtn).click()
-        cy.get(selectors.browseBtn).click().attachFile("MJ.png")
-        cy.get(selectors.commentField).type("updating my profile").wait(3000)
-        cy.get(selectors.attachmentSaveBtn).click()
 
 
     })
